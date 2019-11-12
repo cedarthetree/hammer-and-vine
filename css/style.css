@@ -34,6 +34,10 @@ nav.mobile {
 	padding-top: 15px;
 }
 
+main.about{
+	background-image: url('../images/');
+}
+
 h1, h2, h3, h4 {
 	font-family: courier-std, monospace;
 }
@@ -55,6 +59,11 @@ h2 {
 	font-size: 36px;
 	text-align: center;
 	padding-top: 25px;
+}
+
+h2.about {
+	text-align: left;
+	margin-left: 25px;
 }
 
 h3 {
@@ -132,10 +141,18 @@ li.mobile a:hover {
   opacity: 1;
 }
 
-.about {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+div.about {
 	width: 80%;
+	column-count: 2;
+	margin-left: 25px;
+}
+
+p.about {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Merriweather', serif;
 }
 
 blockquote {
@@ -202,6 +219,12 @@ footer {
 	}
 	nav.mobile {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 785px) {
+	div.about{
+		column-count: 1;
 	}
 }
 
