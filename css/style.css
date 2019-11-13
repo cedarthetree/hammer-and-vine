@@ -54,6 +54,7 @@ h1 {
 
 h1.mobile {
 	max-width: 450px;
+	margin-bottom: 0;
 }
 
 h2 {
@@ -146,7 +147,7 @@ div.about {
 	width: 30%;
 	column-count: 1;
 	margin-left: 50px;
-	padding-bottom: 300px;
+	padding-bottom: 250px;
 }
 
 p.about {
@@ -155,6 +156,11 @@ p.about {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: 'Merriweather', serif;
+}
+
+img.gradient {
+	position: absolute;
+	top: 265px;
 }
 
 blockquote {
@@ -225,8 +231,11 @@ footer {
 	nav.mobile {
 		display: none;
 	}
-		div.about {
+	div.about {
 		width: 50%;
+	}
+	main.mobile {
+		display: none;
 	}
 }
 
