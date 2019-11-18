@@ -20,6 +20,7 @@ header.mobilehome {
 	background-image: url('../images/mobileheader.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;	
+	position: relative;
 }
 
 header.mobile {
@@ -35,8 +36,7 @@ nav.mobile {
 }
 
 main.about{
-	background-image: url('../images/background.png');
-	background-size: cover;
+	background-color: #fff;
 }
 
 h1, h2, h3, h4 {
@@ -143,6 +143,16 @@ li.mobile a:hover {
   opacity: 1;
 }
 
+div.title {
+	display: none;
+	position: relative;
+	text-align: center;
+}
+
+img.fade:hover + .title {
+	display: block;
+}
+
 div.about {
 	width: 30%;
 	column-count: 1;
@@ -160,7 +170,46 @@ p.about {
 
 img.gradient {
 	position: absolute;
-	top: 265px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+div.homeslider {
+	background-image: url('../images/homebg.png');
+	background-size: cover;
+}
+
+div.contact {
+	width: 40%;
+	background-color: #a44f44;
+	color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+div.mobilecontact {
+	width: 100%;
+	background-image: url('../images/paper.jpg');
+	background-size: cover;
+	color: #000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+img.slide {
+	display: block;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 200px;
 }
 
 blockquote {
@@ -214,6 +263,9 @@ footer {
 	div.about {
 		width: 80%;
 	}
+	main.desktop {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -245,11 +297,21 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 1024px) {
+	main.about{
+		background-color: #fff;
+	}
+}
+
 @media only screen and (min-width: 1024px) {
 	.grid {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 50px;
 		width: 70%;
+	}
+	main.about {
+		background-image: url('../images/background.png');
+		background-size: cover;
 	}
 }
 
