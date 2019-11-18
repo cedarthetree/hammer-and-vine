@@ -70,7 +70,9 @@ h2.about {
 
 h3 {
 	font-size: 28px;
+	padding-top: 30px;
 }
+
 h4 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #606060;
@@ -198,7 +200,8 @@ div.mobilecontact {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 img.slide {
