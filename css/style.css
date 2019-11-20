@@ -72,6 +72,10 @@ h3 {
 	font-size: 28px;
 }
 
+h3.mobile {
+	padding-top: 30px;
+}
+
 h4 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #606060;
