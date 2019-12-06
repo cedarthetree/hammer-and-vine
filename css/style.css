@@ -32,7 +32,7 @@ nav.mobile {
 }
 
 .blank {
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 main.about{
@@ -60,12 +60,15 @@ h1.mobile {
 h2 {
 	font-size: 36px;
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 40px;
 }
 
 h2.about {
+	font-size: 36px;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 46px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 h3 {
@@ -77,12 +80,12 @@ h3.mobile {
 }
 
 h4 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Merriweather', serif;
 	color: #606060;
 	text-align: center;
-	font-size: 16px;
-	padding-top: 12px;
-	padding-bottom: 6px;
+	font-size: 14px;
+	padding-top: 22px;
+	padding-bottom: 10px;
 }
 
 ul.desktop {
@@ -182,6 +185,12 @@ img.gradient {
 
 div.homeslider {
 	background-image: url('../images/homebg.png');
+	background-size: cover;
+	transition: background-image 1s;
+}
+
+div.homeslider:hover {
+	background-image: url('../images/homebghover.png');
 	background-size: cover;
 }
 
@@ -317,6 +326,11 @@ footer {
 	}
 	main.about {
 		background-image: url('../images/background.png');
+		background-size: cover;
+		transition: background-image 1s;
+	}
+	main.about:hover {
+		background-image: url('../images/backgroundhover.png');
 		background-size: cover;
 	}
 }
